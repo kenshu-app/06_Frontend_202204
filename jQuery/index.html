@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>jQuery基本</title>
+    </head>
+    <body>
+        <!-- <h1 id="title">タイトル</h1>
+
+        <form name="login" action="javascript:void(0)">
+            <p>Name:<input type="text" name="name"></p>
+            <p>Pass:<input type="text" name="pass"></p>
+            <p><button onclick="submitForm()">ログイン</button></p>
+        </form> -->
+        <!-- <a href="" id="link">テキストリンク</a> -->
+        <img src="https://placekitten.com/400/400" id="cat" alt="cat">
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script>
+            // document.querySelector('#title').innerHTML = '<h2>ほげー</h2>'
+
+            // function submitForm() {
+            //     const data = document.forms.login
+            //     const name = data.name.value
+            //     const pass = data.pass.value
+            //     console.log(name, pass)
+            // }
+            // // $(function(){
+            // //     $('#title').html('<h3>ふがー</h3>')
+            // // })
+            // document.querySelector('#title').onclick = function () {
+            //     const str = document.querySelector('#title').innerText
+            //     document.querySelector('#title').innerText = str + '!!'
+            // }
+            // $(function () {
+
+            //     $('#link').click(function () {
+            //         $('#link').text('リンクを変更！')
+            //         return false;
+            //     })
+            // })
+            const catImg = document.getElementById('cat')
+            catImg.onclick = function () {
+                catImg.setAttribute('src', 'https://placekitten.com/g/400/400')
+            }
+        </script>
+    </body>
+</html>

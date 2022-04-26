@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM操作</title>
+</head>
+<body>
+    <h1 id="title">タイトル</h1>
+    <p id="text">サンプル文章</p>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script>
+        // const t = document.querySelector('#title').innerText
+        // const p = document.querySelector('#text').innerText.replace('文章', '')
+        // alert(p + t)
+        const t = $('#title').text()
+        const p = $('#text').text().replace('文章', '')
+        alert(p + t)
+    </script>
+</body>
+</html>
