@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アロー関数</title>
+</head>
+<body>
+    <script>
+    // 10%の税率計算結果を返すアロー関数(小数点以下はMath.floor() で切り捨てる)を無名関数として使用する。
+    // 以下の配列の各要素を使用して 「円」を付与した配列「taxArr」をコンソールに出力する。
+    const price = [198, 268, 324, 182, 98]
+    const taxArr = price.map((price) => {
+        return Math.floor(price * 1.1) + '円'
+    })
+    console.log(taxArr)
+    // ['217円', '294円', '356円', '200円', '107円']
+    </script>
+</body>
+</html>
