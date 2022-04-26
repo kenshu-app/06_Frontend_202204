@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>配列操作</title>
+    </head>
+    <body>
+        <script>
+            // AからJまでをarrに配列のリテラル形式[]で定義する。
+            const arr = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J']
+            // GからIまでを取り出しZを追加する処理を1つの関数で行う。
+            // またメソッドチェーンの繰り返しを使用して順番にコンソールに出力する。
+            arr.splice(6, 3, 'Z').forEach(function (val) {
+                console.log(val)
+            })
+            // さらに副作用のあるarrの各要素は "/"を間に挟み1つの文字列としてコンソールに出力する
+            console.log(arr.join('/'))
+        </script>
+    </body>
+</html>
