@@ -17,6 +17,13 @@
             })
             // さらに副作用のあるarrの各要素は "/"を間に挟み1つの文字列としてコンソールに出力する
             console.log(arr.join('/'))
+
+            // 関数を変数に代入するとその変数を変数として実行できる
+const abc = function (xyz) {
+  return xyz + 'えお'
+} 
+console.log(abc) // function 値として代入された型だけを表示
+console.log(abc('あいう')) // あいうえお 実行結果を表示
         </script>
     </body>
 </html>
